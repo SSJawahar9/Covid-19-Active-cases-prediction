@@ -39,3 +39,4 @@ test1$time=as.numeric(format(as.Date(test[,4]),"%j"))-21
 res=data.frame(predict(reg1,test1,interval="predict"))
 test1$confirmedcases=res$fit
 res2=data.frame(predict(reg2,test1,interval="predict"))
+  
